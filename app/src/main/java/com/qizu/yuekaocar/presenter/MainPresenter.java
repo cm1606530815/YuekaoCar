@@ -35,6 +35,7 @@ public class MainPresenter {
             }
         });
     }
+    //防止內存泄露
     public void detach(){
         listener = null;
     }

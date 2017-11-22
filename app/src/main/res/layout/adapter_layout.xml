@@ -25,6 +25,7 @@
             android:layout_height="wrap_content"
             android:gravity="center_vertical">
 
+            <!-- 商店checkbox -->
             <CheckBox
                 android:id="@+id/shop_checkBox"
                 android:layout_width="wrap_content"
@@ -34,7 +35,7 @@
                 android:paddingRight="@dimen/margin_15dp"
                 android:paddingTop="@dimen/margin_10dp"
                 android:src="@drawable/shopcart_selected" />
-
+            <!-- 商店明晨 -->
             <TextView
                 android:id="@+id/tv_item_shopcart_shopname"
                 android:layout_width="match_parent"
@@ -52,79 +53,85 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/margin_1dp"
-            android:background="@color/background_color" />
+        android:gravity="center_vertical">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center_vertical"
-            android:orientation="horizontal">
+            android:orientation="vertical">
 
-            <!-- 商品 checkbox -->
-            <CheckBox
-                android:id="@+id/item_checkbox"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="@dimen/margin_15dp"
-                android:src="@drawable/shopcart_selected" />
-
-            <!-- 商品图片 -->
-            <ImageView
-                android:id="@+id/item_pic"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_margin="@dimen/margin_10dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1dp"
+                android:background="@color/background_color" />
 
             <LinearLayout
-                android:layout_width="0dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:orientation="vertical">
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
 
-                <TextView
-                    android:id="@+id/item_price"
+                <!-- 商品 checkbox -->
+                <CheckBox
+                    android:id="@+id/item_checkbox"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="¥185"
-                    android:textColor="@color/main_red_text"
-                    android:textSize="@dimen/common_font_size_14" />
+                    android:padding="@dimen/margin_15dp"
+                    android:src="@drawable/shopcart_selected" />
+
+                <!-- 商品图片 -->
+                <ImageView
+                    android:id="@+id/item_pic"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/margin_10dp" />
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="@dimen/margin_5dp"
-                    android:layout_marginTop="@dimen/margin_5dp">
+                    android:layout_weight="1"
+                    android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/item_name"
+                        android:id="@+id/item_price"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="颜色：黑色"
-                        android:textColor="@color/cblack"
-                        android:textSize="@dimen/common_font_size_12" />
+                        android:text="¥185"
+                        android:textColor="@color/main_red_text"
+                        android:textSize="@dimen/common_font_size_14" />
 
-                    <TextView
-                        android:id="@+id/tv_item_shopcart_cloth_size"
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="@dimen/margin_10dp"
-                        android:text="尺寸：XL"
-                        android:textColor="@color/cblack"
-                        android:textSize="@dimen/common_font_size_12" />
+                        android:layout_marginBottom="@dimen/margin_5dp"
+                        android:layout_marginTop="@dimen/margin_5dp">
 
+                        <TextView
+                            android:id="@+id/item_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="颜色：黑色"
+                            android:textColor="@color/cblack"
+                            android:textSize="@dimen/common_font_size_12" />
+
+                        <TextView
+                            android:id="@+id/tv_item_shopcart_cloth_size"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/margin_10dp"
+                            android:text="尺寸：XL"
+                            android:textColor="@color/cblack"
+                            android:textSize="@dimen/common_font_size_12" />
+
+                    </LinearLayout>
+
+                    <com.qizu.yuekaocar.PlusView
+                        android:id="@+id/plus_view_id"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content">
+
+                    </com.qizu.yuekaocar.PlusView>
                 </LinearLayout>
-
-                <com.qizu.yuekaocar.PlusView
-                    android:id="@+id/plus_view_id"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content">
-
-                </com.qizu.yuekaocar.PlusView>
 
                 <View
                     android:layout_width="@dimen/margin_1dp"
